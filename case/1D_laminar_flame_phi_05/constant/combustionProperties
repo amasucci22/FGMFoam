@@ -1,0 +1,31 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  9
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      combustionProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+
+
+// Properties file for SDR model
+
+ignite              yes;
+
+FGMModel            FGMModel; 
+
+PDModel             mixAvg; // mixAvg or Lewis
+
+betacDynamic        no; //Static or dynamic computation of the combustion model parameter
+
+betaC               betacVal [0 0 0 0 0 0 0] 6.5; //Value of static betac 
+
