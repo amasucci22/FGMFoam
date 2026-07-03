@@ -1,0 +1,7 @@
+FGMThermo.C
+lookupFGM.C
+scaleYc.C
+FGMFoam.C
+
+EXE = $(FOAM_APPBIN)/FGMFoam
+

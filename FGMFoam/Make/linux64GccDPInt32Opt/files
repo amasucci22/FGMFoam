@@ -1,0 +1,7 @@
+SOURCE += FGMThermo.C
+SOURCE += lookupFGM.C
+SOURCE += scaleYc.C
+SOURCE += FGMFoam.C
+
+EXE = $(FOAM_APPBIN)/FGMFoamBetaCNO
+
