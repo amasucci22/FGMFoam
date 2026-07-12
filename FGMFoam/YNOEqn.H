@@ -13,7 +13,7 @@ if (PDModel == "mixAvg")
 	(
 	  fvm::ddt(rho, YNO)
 	  + fvm::div(phi, YNO)
-	  - fvm::laplacian(thermo.rho()*thermo.DNO(), YNO)  
+	  - fvm::laplacian(thermo.rho()*thermo.DNO()+turbulence->mut()/Sct, YNO)  
 	  == 
 	  thermo.sourceNO() 
 	);
